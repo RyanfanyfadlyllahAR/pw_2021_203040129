@@ -22,7 +22,8 @@ $mahasiswa = [
 	 	<li>Nama : <?= $mhs[0]; ?></li>
 	 	<li>Npm : <?= $mhs[1]; ?></li>
 	 	<li>jurusan : <?= $mhs[2]; ?></li>
-	 	<li>Email : <?= $mhs[3]; ?></li>
+	 	<li>Email : 
+	 		<?= $mhs[3]; ?></li>
  	</ul>
  <?php endforeach; ?>
  </body>
