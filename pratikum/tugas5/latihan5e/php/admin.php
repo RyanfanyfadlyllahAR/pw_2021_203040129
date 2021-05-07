@@ -6,9 +6,9 @@ require 'function.php';
 if (isset($_GET['cari'])) {
 	$keyword = $_GET['keyword'];
 	$mahasiswa = query("SELECT * FROM mahasiswa WHERE
-		nrp LIKE '%$keyword%'
-		nama LIKE '%$keyword%'
-		email LIKE '%$keyword%'
+		nrp LIKE '%$keyword%' OR
+		nama LIKE '%$keyword%' OR
+		email LIKE '%$keyword%' OR
 		jurusan LIKE '%$keyword%'
 		");
 
