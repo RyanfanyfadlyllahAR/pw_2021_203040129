@@ -1,28 +1,25 @@
 <?php 
-require 'functions.php';
+require 'function.php';
 
 if (isset($_POST['tambah'])) {
 	if (tambah($_POST) > 0) {
-		echo "<sctript>
+		echo "<script>
 				alert('Data Berhasil ditambahkan!');
 				document.location.href = 'admin.php';
-				</sctript>";
+				</script>";
 		} else {
-			echo "<sctript>
+			echo "<script>
 			alert('Data Berhasil ditambahkan!');
 				document.location.href = 'admin.php';
-				</sctript>";
+				</script>";
 	}
 }
  ?>
 <h3>From Tambah Data Mahasiswa</h3>
 
-<form action="" method="post">
+<form action="" method="post" enctype="multipart/form-data">
 	<ul>
-		<li>
-			<label for="gambar">Gambar :</label><br>
-			<input type="text" name="img" id="img" required><br><br>
-		</li>
+		
 		<li>
 			<label for="nrp">NRP :</label><br>
 			<input type="text" name="nrp" id="nrp" required><br><br>
@@ -47,6 +44,10 @@ if (isset($_POST['tambah'])) {
 	   		<option value="kimunikasi">kimunikasi</option>
 	   	</select>
 	   </li>
+	   <li>
+			<label for="gambar">Gambar :</label><br>
+			<input type="file" name="img" id="img" ><br><br>
+		</li>
 	   <br>
 	   <button type="submit" name="tambah">Tambah Data!</button>
 	   <button type="submit">
