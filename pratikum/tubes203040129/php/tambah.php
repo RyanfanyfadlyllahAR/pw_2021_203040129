@@ -16,7 +16,11 @@ if (isset($_POST['tambah'])) {
 }
  ?>
 <h3>From Tambah Data Mahasiswa</h3>
-
+<style>
+        body{
+            background-color:  gray; 
+        }
+    </style>
 <form action="" method="post" enctype="multipart/form-data">
 	<ul>
 		

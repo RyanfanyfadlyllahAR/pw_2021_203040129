@@ -24,7 +24,7 @@ $mahasiswa = query("SELECT * FROM mahasiswa");
  	<title>Document</title>
  </head>
  <body>
- 	<div class="container" style="background-color: gray">
+ 	<div class="container">
  		<div class="add">
  			<a href="tambah.php">Tambah.php</a>
  		</div>
